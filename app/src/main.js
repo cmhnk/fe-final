@@ -1,3 +1,5 @@
 import './styles/base.scss';
 
-console.info('Tada! It works. Now build something awesome.');
+$( document ).ready(function() {
+    console.log( "ready!" );
+});
