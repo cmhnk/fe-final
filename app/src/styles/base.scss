@@ -1,5 +1,7 @@
+$dark-text: #425829;
+
 body {
-  color: hsl(88, 50%, 53%);
+  color: $dark-text;
   font-family: 'Raleway', 'Helvetica Neue', 'Helvetica', sans-serif;
 }
 
@@ -11,6 +13,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 150, 136, 0.18);
+}
+
+#root:hover {
+  background-color: rgba(0, 150, 136, 0.32);
 }
 
 h1 {
