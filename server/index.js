@@ -26,15 +26,25 @@ if (isDeveloping) {
 
   app.use(middleware);
   app.use(webpackHotMiddleware(compiler));
-  app.get('*', (req, res) => {
+  // app.use(express.static(path.join(__dirname, '/..dist/'), {index: '_'}));
+  app.get('/', (req, res) => {
     res.write(middleware.fileSystem.readFileSync(path.join(__dirname, '/../dist/index.html')));
     res.end();
   });
+  app.get('/enter', function (req, res) {
+    res.sendFile('/../dist/enter.html');
+});
+console.log("I got here!");
 } else {
-  app.use(express.static(path.join(__dirname, '/../dist')));
-  app.get('*', (req, res) => {
+  // app.use(express.static(path.join(__dirname, '/../dist')));
+  app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
   });
+
+  app.get('/enter', function (req, res) {
+    res.write(middleware.fileSystem.readFileSync(path.join(__dirname, '/../dist/enter.html')));
+    console.log("I got here!");
+});
 }
 
 app.listen(port, (err) => {
