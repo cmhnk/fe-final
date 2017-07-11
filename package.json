@@ -1,12 +1,12 @@
 {
-  "name": "webpack2-express-heroku-starter",
+  "name": "front-end-final-project",
   "version": "0.1.0",
-  "description": "Starter webpack 2/express app",
+  "description": "my final project!",
   "repository": {
     "type": "git",
-    "url": "git://github.com/tublitzed/webpack2-express-heroku-starter.git"
+    "url": "https://github.com/cmhnk/fe-final"
   },
-  "author": "Rachel Tublitz",
+  "author": "Corinne Henk",
   "license": "MIT",
   "dependencies": {
     "css-loader": "^0.28.0",
