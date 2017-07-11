@@ -5,5 +5,9 @@ $( document ).ready(function() {
 
     $('#root').click(function(){
       console.log( "yay you clicked it!" );
+
+      window.location.href='https://github.com/cmhnk';
+      return false;
+
     });
 });
