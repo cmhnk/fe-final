@@ -8,14 +8,44 @@ body {
 #root {
   position: absolute;
   width: 50%;
-  height: 50%;
-  top: 50%;
+  height: 30%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 150, 136, 0.18);
 }
 
-#root:hover {
+.icon-1 {
+  position: absolute;
+  width: 50%;
+  height: 10%;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 150, 136, 0.18);
+}
+
+.icon-2 {
+  position: absolute;
+  width: 50%;
+  height: 10%;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 150, 136, 0.18);
+}
+
+.icon-3 {
+  position: absolute;
+  width: 50%;
+  height: 10%;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 150, 136, 0.18);
+}
+
+.icon-1:hover, .icon-2:hover, .icon-3:hover {
   background-color: rgba(0, 150, 136, 0.32);
 }
 
@@ -39,19 +69,55 @@ p {
   font-size: .9rem;
 }
 
-.octocat {
-  margin-top: 3em;
-  width: 1em;
-  height: 1em;
+.octocat, .linkedin, .instagram {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 2em;
+  height: 2em;
 }
+
+
 
 @media (max-width: 600px) {
 
   #root {
     position: absolute;
     width: 80%;
-    height: 80%;
-    top: 50%;
+    height: 50%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 150, 136, 0.18);
+  }
+
+  .icon-1 {
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 150, 136, 0.18);
+  }
+
+  .icon-2 {
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 150, 136, 0.18);
+  }
+
+  .icon-3 {
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 150, 136, 0.18);
